@@ -11,13 +11,37 @@ import '../../node_modules/froala-editor/css/froala_editor.pkgd.min.css';
 require('../../node_modules/font-awesome/css/font-awesome.css');
 
 class RichTextEditor extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      model: '',
+    };
+
+    this.handleModelChange = this.handleModelChange.bind(this);
+  }
+
+  handleModelChange(model) {
+    this.setState({ model });
+  }
+
   render() {
-    const content = <h1>Froala Demo</h1>;
+    const config = {
+      placeholderText: 'Edit Your Content Here!',
+    };
 
     return (
       <div className={styling['your-component']}>
-        {content}
-        <FroalaEditor />
+        <h1>Froala Demo</h1>
+        <hr />
+        <h2>The Editor</h2>
+        <FroalaEditor
+          config={config}
+          model={this.state.model}
+          onModelChange={this.handleModelChange}
+        />
+        <h2>The Model State</h2>
+        <code>{this.state.model}</code>
       </div>
     );
   }

@@ -4,8 +4,8 @@ import FroalaEditor from 'react-froala-wysiwyg';
 import styling from '../styling/main.scss';
 
 // Require Editor JS files.
-import '../../node_modules/froala-editor/js/froala_editor.pkgd.min.js';
-import '../../node_modules/froala-editor/css/froala_editor.pkgd.min.css';
+import '../../lib/froala-editor/js/froala_editor.pkgd.min.js';
+import '../../lib/froala-editor/css/froala_editor.pkgd.min.css';
 
 // Require Font Awesome.
 require('../../node_modules/font-awesome/css/font-awesome.css');
@@ -26,13 +26,15 @@ class RichTextEditor extends Component {
   }
 
   render() {
+    // docs at https://www.froala.com/wysiwyg-editor/examples/custom-toolbar
     const editorOptions = ['bold', 'italic', 'underline', 'fontSize', 'color'];
     const config = {
-      placeholderText: 'Edit Your Content Here!',
+      placeholderText: 'Add your answer here.',
       toolbarButtons: editorOptions,
       toolbarButtonsMD: editorOptions,
       toolbarButtonsSM: editorOptions,
-      toolbarButtonsXS: editorOptions,
+      toolbarButtonsXS: [],
+      toolbarInline: true,
     };
 
     return (

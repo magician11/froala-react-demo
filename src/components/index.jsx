@@ -26,8 +26,13 @@ class RichTextEditor extends Component {
   }
 
   render() {
+    const editorOptions = ['bold', 'italic', 'underline', 'fontSize', 'color'];
     const config = {
       placeholderText: 'Edit Your Content Here!',
+      toolbarButtons: editorOptions,
+      toolbarButtonsMD: editorOptions,
+      toolbarButtonsSM: editorOptions,
+      toolbarButtonsXS: editorOptions,
     };
 
     return (

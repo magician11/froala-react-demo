@@ -1,23 +1,13 @@
-# React App Starting Point
+# Froala React Demo
 
-Simple and solid starting point for React.js apps.
+Froala is a WYSIWYG Editor. There is a React version of it https://www.froala.com/wysiwyg-editor/docs/framework-plugins/react
 
-Uses: eslint, webpack, sass, es6
+This repo experiments with how best to use it in a React environment.
 
 ## To start..
 
-- Get a copy of this boilerplate by typing `git clone https://github.com/magician11/react-starting-point.git [my-project]`
-- Then `cd [my-project]`
-
-## To update this boilerplate to point to your repository..
-
-- Goto GitHub and [create a new repository](https://github.com/new)
-- Now remove the current remote that is pointing to this starting point repo, by typing `git remote rm origin`
-- Now you can add this starting point to your new repo you just created by typing `git remote add origin [https://github.com/your-username/your-new-repo.git]`
-- Edit this README and any other files at this point, then type `git commit -a -m "my first update"`
-- Finally commit these initial changes by typing `git push -u origin master`
-
-From there code and work as per normal with this little jumpstart :)
+- Get a copy of this boilerplate by typing `git clone https://github.com/magician11/froala-react-demo.git`
+- Then `cd froala-react-demo`
 
 ## To develop in a hot reloading environment..
 

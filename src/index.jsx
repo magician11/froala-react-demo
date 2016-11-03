@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import YourComponent from './components/index';
+import RichTextEditor from './components/index';
 
 // remove margins
 document.body.style.margin = 0;
 
-ReactDOM.render(<YourComponent />, document.getElementById('app'));
+ReactDOM.render(<RichTextEditor />, document.getElementById('app'));
